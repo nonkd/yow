@@ -51,14 +51,13 @@ else:
 domain1 = st.multiselect("Pilih biji-bijian yang pernah kamu manfaatkan: ", 
 	['Almond', 'Amla', 'Apple', 'Avocado','Betel Nut','Black Plum'])
 
-# print the selected hobby
 if domain1:
 	st.text(st.write("Kamu sudah memanfaatkan sebanyak", len(domain1), 'biji buah-buahan'))
 
-#lain = st.text_area("Tuliskan manfaat buah yang lain", " ")
-#if(st.button('Submit')):
-	#result = lain.title()
-	#st.success(result)
+lain = st.text_area("Tuliskan manfaat buah yang lain", " ")
+if(st.button('Submit')):
+	result = lain.title()
+	st.success(result)
 
 if(st.button("Pesan untukmu")):
 	st.text("Terimakasih, tetap semangat ya!!! :))")
